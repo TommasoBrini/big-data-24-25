@@ -121,7 +121,7 @@ aws emr create-cluster \
     --applications Name=Hadoop Name=Spark \
     --instance-groups InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large \
     --service-role EMR_DefaultRole \
-    --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole,KeyName=<my_key_pair_name> \
+    --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole,KeyName=tommiKey \
     --region "us-east-1"
 ```
 
